@@ -47,6 +47,7 @@ useEffect(()=>{
 },[status])
 
 
+}
 useEffect(()=>{
   setTimeout(()=>{
 // onclose()
