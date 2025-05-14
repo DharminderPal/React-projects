@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import getmeals from "../../service/menuService/Meals";
-
+import Notify from "../../notification";
 const MenuPage = () => {
 
   const [status, setstatus] = useState("loading");
   const [meals, setmeals] = useState([]);
+// ******************************************************************************
+const [shownotifiation, setnotification]=useState("")
 
-  const isloading = status === "loading";
+  // *****************************************************************
+const isloading = status === "loading";
   const isdone = status === "done"
 
   const hasmeals = isdone && meals.length !== 0;
@@ -14,6 +17,9 @@ const MenuPage = () => {
   const nomeals = isdone && meals.length === 0;
 
   const iserror = status === 'error';
+
+
+  
   // console.log(iserror)
   const fetchmeals = async () => {
     try {
@@ -28,9 +34,27 @@ const MenuPage = () => {
       setStatus('error')
     }
   }
+  // *****************************************************
   useEffect(() => {
     fetchmeals();
   }, []);
+  const onclosenoti =()=>{
+     setnotification('')
+  }
+
+useEffect(()=>{
+  setnotification(status);
+},[status])
+
+
+}
+useEffect(()=>{
+  setTimeout(()=>{
+// onclose()
+onclosenoti() 
+  },2500)
+},[])
+// *********************************************************
   return (
     <div>
       <h1>Recipes Corner</h1>
@@ -40,6 +64,10 @@ const MenuPage = () => {
         </div>
       ))} 
       {nomeals && <h2>No_meals</h2>}
+
+      {  shownotifiation && (
+       <Notify message={shownotifiation}close_notifi={onclosenoti}  />
+     )}
     </div>
   );
 };
