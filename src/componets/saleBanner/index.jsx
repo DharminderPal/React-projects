@@ -51,13 +51,13 @@ shouldComponentUpdate(){
 gettime
     render() {
 
-        console.log("render")
+        // console.log("render")
         const{setIntervalid} =this.state
 
         const timeleft= getTimeDiffrence();
         const {days,minutes,hours,seconds}= timeleft || {};
         
-        const salestart = !!setIntervalid
+        const salestart = !setIntervalid
         // console.log(seconds,minutes);
         return (
             <div>

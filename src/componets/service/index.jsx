@@ -16,8 +16,7 @@ return data;
         throw result;
 
     }
-    
-    catch(abc){
+catch(abc){
 console.log(abc,url);
 throw new Error("API FAILEd",{ case :abc });
     }
