@@ -47,11 +47,9 @@ useEffect(()=>{
 },[status])
 
 
-}
 useEffect(()=>{
   setTimeout(()=>{
-// onclose()
-onclosenoti() 
+onclosenoti()
   },2500)
 },[])
 // *********************************************************

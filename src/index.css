@@ -1,4 +1,4 @@
-:root {
+ :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -19,11 +19,11 @@ h1 {
   line-height: 1.1;
 }
 
-h1:hover{
+/* h1:hover{
 color: rgb(255, 174, 0);
-}
+} */
 /* Base styles */
-.app {
+/* .app {
   text-align: center;
   background-color: #ffffff;
   color: #333333;
@@ -33,5 +33,5 @@ color: rgb(255, 174, 0);
 
 .header {
   padding: 20px;
-}
+} */ 
 

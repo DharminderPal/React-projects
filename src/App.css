@@ -8,7 +8,7 @@ color: white;
 background-color: orange;
 } */
 
-         .btnn {background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%)}
+         /* .btnn {background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%)}
          .btnn {
             margin: 10px;
             padding: 15px 45px;
@@ -24,7 +24,7 @@ background-color: orange;
 
           .btnn:hover {
             background-position: right center; /* change the direction of the change here */
-            color: #fff;
+            /* color: #fff;
             text-decoration: none;
-          }
-         
+          } */
+          
