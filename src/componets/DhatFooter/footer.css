@@ -1,0 +1,37 @@
+
+.chatfooter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffe48e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+.btn1 {
+  padding: 10px 15px;
+  background-color: #559729;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input:focus {
+    outline: 2px solid #4285f4;
+    border-color: #4285f4;
+}
+
+
